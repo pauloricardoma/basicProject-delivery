@@ -1,0 +1,49 @@
+<div *ngIf="pedido">
+  <div class="header">
+    <mat-toolbar color="primary">
+      <span>Acompanhar pedido</span>
+    </mat-toolbar>
+  </div>
+
+  <div>
+    <mat-list>
+      <mat-list-item>
+        <mat-list-item>
+          <div *ngIf="pedido">
+            <strong>Identificação do pedido: </strong>
+            <span class="margin-left">{{ pedido.id }}</span>
+          </div>
+        </mat-list-item>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-list-item>
+          <strong>Data e hora: </strong>
+          <span class="margin-left">{{ pedido.dataHora | date: 'short' }}</span>
+        </mat-list-item>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-list-item>
+          <strong>Situação: </strong>
+          <span class="margin-left">{{ pedido.situacao }}</span>
+        </mat-list-item>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+  <mat-list>
+    <mat-list-item *ngIf="!pedido">Seu pedido está vazio.</mat-list-item>
+    <ng-container *ngFor="let item of pedido.itens">
+      <mat-list-item>
+        <span class="flex-1">{{ item.produto.descricao }}</span>
+        <span
+          >{{ item.quantidade }} &times; R$
+          {{ item.produto.preco | number: '0.2-2' }}</span
+        >
+      </mat-list-item>
+    </ng-container>
+    <mat-list-item>
+      <strong class="flex-1">Total</strong>
+      <strong>R$ {{ valorTotalPedido() | number: '0.2-2' }}</strong>
+    </mat-list-item>
+  </mat-list>
+</div>

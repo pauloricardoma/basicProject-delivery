@@ -1,0 +1,21 @@
+<div class="header">
+  <mat-toolbar color="primary">
+    <span>Gerenciar Pedidos</span>
+  </mat-toolbar>
+</div>
+
+<mat-list>
+  <mat-list-item *ngIf="pedidos.length == 0"
+    >Seu pedido está vazio.</mat-list-item
+  >
+  <a
+    class="style-none"
+    *ngFor="let pedido of pedidos"
+    [routerLink]="['/pedidos', pedido.id, 'atualizar']"
+  >
+    <mat-list-item>
+      <span class="flex-1">{{ pedido.id }}</span>
+      <span>{{ pedido.situacao }} </span>
+    </mat-list-item>
+  </a>
+</mat-list>
