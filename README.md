@@ -4,6 +4,7 @@
   em conjunto com a IGTI. Na trilha de aprendizado percorremos a parte do Frontend com HTML, CSS, <br/>
   JavaScript e Angular que faria a requisição da API que foi criada utilizando no Backend o JAVA, <br/>
   com seu framework SpringBoot.
+  Irei continuar atualizando o projeto para deixá-lo mais completo...
 
 
 # Link para as duas páginas principais do projeto
