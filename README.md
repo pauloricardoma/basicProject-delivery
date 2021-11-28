@@ -19,3 +19,12 @@
 <p align='center'><a href='https://basic-project-delivery.vercel.app/pedidos'><img src='https://github.com/pauloricardoma/basicProject-delivery/blob/main/src/assets/pedidos-empreendedor.gif?raw=true'></a></p>
 
 <p align='center'><a href='https://basic-project-delivery.vercel.app/pedidos'>Área de controle dos pedidos recebidos</a></p>
+
+<h4>🛠 Tecnologias</h4>
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+<a href='https://material.angular.io/'><img src='https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white' /></a>
+<a href='https://vercel.com/'><img src='https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white' /></a>
+<a href='https://spring.io/'><img src='https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot' /></a>
+<a href='https://www.heroku.com/'><img src='https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white' /></a>
