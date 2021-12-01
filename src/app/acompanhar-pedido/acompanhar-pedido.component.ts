@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { interval } from 'rxjs';
 import { Pedido } from '../pedido';
 import { PedidoService } from '../pedido/pedido.service';
 
@@ -28,22 +27,22 @@ export class AcompanharPedidoComponent implements OnInit {
     this.route.paramMap.subscribe((paramMap) => {
       this.idPedido = parseInt(paramMap.get('idPedido') || '0');
       this.carregaPedido();
-      this.atualizaPagina(this.pedido.situacao);
+      this.atualizaSituacao();
     });
   }
 
-  atualizaPagina(e: string) {
-    this.pararPagina = window.setInterval(() => {
-      window.location.reload();
-    }, 5000);
+  atualizaSituacao() {
+    return (this.pararPagina = window.setInterval(() => {
+      this.carregaPedido();
+    }, 5000));
   }
 
-  paraAtualizacao() {
+  pararAtualizacao() {
     window.clearInterval(this.pararPagina);
   }
 
   ngOnDestroy() {
-    this.paraAtualizacao();
+    this.pararAtualizacao();
   }
 
   carregaPedido() {
