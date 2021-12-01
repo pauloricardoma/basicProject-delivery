@@ -1,28 +1,30 @@
-# Solucao2
+<h1 algin='center'>Desafio Final Bootcamp Tech PAN</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+  <p>O projeto fazia parte do desafio final do Bootcamp Tech PAN, realizado pelo banco PAN em conjunto com a IGTI. Na trilha de aprendizado percorremos a parte do Frontend com HTML, CSS, JavaScript e Angular que faria a requisição da API que foi criada utilizando no Backend o JAVA, com seu framework SpringBoot.</p>
+  <p>Irei continuar atualizando o projeto para deixá-lo mais completo...</p>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h3>Link para as duas páginas principais do projeto</h3>
 
-## Code scaffolding
+  O frontend está usando uma API banco de dados com deploy no Heroku, o que pode acarretar demora de alguns segundos de resposta...
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3 align='center'>Área do cliente usuário do aplicativo</h3>
 
-## Build
+<p align='center'><a href='https://basic-project-delivery.vercel.app/cardapio'><img src='https://github.com/pauloricardoma/basicProject-delivery/blob/main/src/assets/cardapio-cliente.gif?raw=true'></a></p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<p align='center'><a href='https://basic-project-delivery.vercel.app/cardapio'>Lista de produtos estabelecimento</a></p>
 
-## Running unit tests
+<h3 align='center'>Esse segundo seria uma aréa reservada ao empreendedor dono do estabelecimento</h3>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align='center'><a href='https://basic-project-delivery.vercel.app/pedidos'><img src='https://github.com/pauloricardoma/basicProject-delivery/blob/main/src/assets/pedidos-empreendedor.gif?raw=true'></a></p>
 
-## Running end-to-end tests
+<p align='center'><a href='https://basic-project-delivery.vercel.app/pedidos'>Área de controle dos pedidos recebidos</a></p>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<h4>🛠 Tecnologias</h4>
 
-## Further help
+As seguintes ferramentas foram usadas na construção do projeto:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# basicProject-delivery
+<a href='https://material.angular.io/'><img src='https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white' /></a>
+<a href='https://vercel.com/'><img src='https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white' /></a>
+<a href='https://spring.io/'><img src='https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot' /></a>
+<a href='https://www.heroku.com/'><img src='https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white' /></a>
